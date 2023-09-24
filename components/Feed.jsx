@@ -31,7 +31,7 @@ export const Feed = () => {
     };
 
     fetchPrompts();
-  });
+  }, []);
 
   return (
     <section className="feed">
