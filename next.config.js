@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
   images: {
     domains: ["lh3.googleusercontent.com"],
   },
@@ -12,4 +13,8 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+module.exports = {
+  basePath: "/next", // Change this to match your repository name
+  assetPrefix: "/next/",
+  nextConfig,
+};
